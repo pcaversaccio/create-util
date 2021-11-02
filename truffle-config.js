@@ -46,7 +46,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider({
           mnemonic: { phrase: process.env.SEEDPHRASE },
-          providerOrUrl: `${config.goerli.url}/${projectId}`,
+          providerOrUrl: `${config.goerli.url}/${process.env.PROJECTID}`,
         }),
       network_id: config.goerli.network_id,
     },
