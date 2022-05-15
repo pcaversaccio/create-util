@@ -33,7 +33,7 @@ contract DeployBytecode {
         returns (address newContract)
     {
         // solhint-disable-next-line no-inline-assembly
-        assembly {
+        assembly ("memory-safe") {
             /** @dev `CREATE` opcode
              *
              * Stack input
