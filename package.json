@@ -27,19 +27,18 @@
     "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix"
   },
   "devDependencies": {
-    "@ethereumjs/tx": "^3.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.3.0",
-    "@typescript-eslint/parser": "^5.3.0",
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "ethers": "^5.5.1",
-    "prettier": "^2.4.1",
-    "solhint": "^3.3.6",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
-  },
-  "dependencies": {
-    "@truffle/hdwallet-provider": "^2.0.4",
-    "dotenv": "^16.0.0"
+    "@ethereumjs/tx": "^3.5.1",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ethers": "^5.6.6",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
   }
 }
