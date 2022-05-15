@@ -7,6 +7,13 @@ pragma solidity 0.8.13;
  */
 error Failed(address emitter);
 
+/**
+ * @title CREATE Deployer Smart Contract
+ * @author Pascal Marco Caversaccio, pascal.caversaccio@hotmail.ch
+ * @notice Helper smart contract to make easier and safer usage of the `CREATE` EVM opcode.
+ * @dev Adjusted from here: https://github.com/safe-global/safe-contracts/blob/main/contracts/libraries/CreateCall.sol.
+ */
+
 contract DeployBytecode {
     /**
      * @dev Event that is emitted when a contract is successfully created.
