@@ -15,7 +15,7 @@ contract DeployBytecode {
 
   /**
    * @dev The function `deployBytecode` deploys a new contract via calling
-   * the CREATE opcode and using the creation bytecode as input.
+   * the `CREATE` opcode and using the creation bytecode as input.
    * @param bytecode The creation bytecode.
    */
   function deployBytecode(bytes memory bytecode)
@@ -24,7 +24,7 @@ contract DeployBytecode {
   {
     // solhint-disable-next-line no-inline-assembly
     assembly {
-      /** @dev CREATE opcode
+      /** @dev `CREATE` opcode
        *
        * Stack input
        * ------------
