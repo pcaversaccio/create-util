@@ -8,7 +8,7 @@ The easiest way to think about it, which is also fairly accurate, is that the So
 
 ## Deployments
 
-- Rinkeby: [0x31EE2C16B5c6d47195fb40020E979858740F9b93](https://rinkeby.etherscan.io/address/0x31ee2c16b5c6d47195fb40020e979858740f9b93)
-- Ropsten: [0xf0Da2BC8c594f0cb975a67765709b8aa0F37B379](https://ropsten.etherscan.io/address/0xf0Da2BC8c594f0cb975a67765709b8aa0F37B379)
-- Kovan: [0xd72c0cBC4B44957b2c46d6c21E897c50a2d71D79](https://kovan.etherscan.io/address/0xd72c0cBC4B44957b2c46d6c21E897c50a2d71D79)
-- Goerli: [0xbf614762da866E0E55C273945C018f588E45B71b](https://goerli.etherscan.io/address/0xbf614762da866E0E55C273945C018f588E45B71b)
+- Rinkeby: [`0xa46Fd83F1197506d39DBe870Dec21f078DF8265f`](https://rinkeby.etherscan.io/address/0xa46Fd83F1197506d39DBe870Dec21f078DF8265f)
+- Ropsten: [`0x74E022542823C69E7D28974cB8d310Acf8E747D4`](https://ropsten.etherscan.io/address/0x74E022542823C69E7D28974cB8d310Acf8E747D4)
+- Kovan: [`0xCbCAD8702Ce84D2B6eC0cD5E68ED81A81A09a945`](https://kovan.etherscan.io/address/0xCbCAD8702Ce84D2B6eC0cD5E68ED81A81A09a945)
+- Goerli: [`0x470301ed535B83Ee46B9D3f7c9Db1E0c69448f13`](https://goerli.etherscan.io/address/0x470301ed535B83Ee46B9D3f7c9Db1E0c69448f13)
