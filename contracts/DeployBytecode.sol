@@ -17,9 +17,11 @@ contract DeployBytecode {
     /**
      * @dev The function `deployBytecode` deploys a new contract via calling
      * the `CREATE` opcode and using the creation bytecode as input.
+     * @param amount The value in wei to send to the new account. If `amount` is non-zero,
+     * `bytecode` must have a `payable` constructor.
      * @param bytecode The creation bytecode.
      */
-    function deployBytecode(bytes memory bytecode)
+    function deployBytecode(uint256 amount, bytes memory bytecode)
         public
         returns (address newContract)
     {
@@ -46,7 +48,7 @@ contract DeployBytecode {
              * This is the first parameter. For the second parameter, we read the length from memory using `mload`.
              * As the length is the first 32 bytes at the location of `bytecode`, we can read the length by calling `mload(bytecode)`.
              */
-            newContract := create(0, add(bytecode, 0x20), mload(bytecode))
+            newContract := create(amount, add(bytecode, 0x20), mload(bytecode))
         }
         if (newContract == address(0)) revert Failed(address(this));
         emit ContractCreation(newContract);
