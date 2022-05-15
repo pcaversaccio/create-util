@@ -3,8 +3,9 @@ pragma solidity 0.8.13;
 
 /**
  * @dev Error that occurs when the contract creation failed.
+ * @param emitter The contract that emits the error.
  */
-error Failed();
+error Failed(address emitter);
 
 contract DeployBytecode {
   /**
@@ -47,7 +48,7 @@ contract DeployBytecode {
        */
       newContract := create(0, add(bytecode, 0x20), mload(bytecode))
     }
-    if (newContract == address(0)) revert Failed();
+    if (newContract == address(0)) revert Failed(address(this));
     emit ContractCreation(newContract);
   }
 }
