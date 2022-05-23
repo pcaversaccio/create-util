@@ -1,6 +1,5 @@
 require("dotenv").config();
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const config = require("./network-config.json");
 
 module.exports = {
@@ -56,7 +55,7 @@ module.exports = {
   // Configure our compilers
   compilers: {
     solc: {
-      version: "0.8.13",
+      version: "0.8.14",
       settings: {
         optimizer: {
           enabled: true,

@@ -77,7 +77,7 @@ contract Create {
     }
 
     /**
-     * @dev Returns the address where a contract will be stored if deployed via {deploy}.
+     * @dev Returns the address where a contract will be stored if deployed via `deploy`.
      * For the specification of the Recursive Length Prefix (RLP) encoding scheme, please
      * refer to p. 19 of the Ethereum Yellow Paper (https://ethereum.github.io/yellowpaper/paper.pdf)
      * and the Ethereum Wiki (https://eth.wiki/fundamentals/rlp). For further insights also, see the
@@ -88,17 +88,15 @@ contract Create {
      * Thus, the first contract address created by another contract is calculated with a non-zero nonce.
      */
     // prettier-ignore
-    function computeAddress(address addr, uint256 nonce) internal pure returns (address) {
+    function computeAddress(address addr, uint256 nonce) public pure returns (address) {
         bytes memory data;
         bytes1 len = bytes1(0x94);
 
         if (nonce == 0x00) data = abi.encodePacked(bytes1(0xd6), len, addr, bytes1(0x80));
         else if (nonce <= 0x7f) data = abi.encodePacked(bytes1(0xd6), len, addr, uint8(nonce));
         else if (nonce <= type(uint8).max) data = abi.encodePacked(bytes1(0xd7), len, addr, bytes1(0x81), uint8(nonce));
-        else if (nonce <= type(uint16).max)
-            data = abi.encodePacked(bytes1(0xd8), len, addr, bytes1(0x82), uint16(nonce));
-        else if (nonce <= type(uint24).max)
-            data = abi.encodePacked(bytes1(0xd9), len, addr, bytes1(0x83), uint24(nonce));
+        else if (nonce <= type(uint16).max) data = abi.encodePacked(bytes1(0xd8), len, addr, bytes1(0x82), uint16(nonce));
+        else if (nonce <= type(uint24).max) data = abi.encodePacked(bytes1(0xd9), len, addr, bytes1(0x83), uint24(nonce));
 
         /**
          * @dev In the case of `nonce > type(uint24).max`, we have the following encoding scheme:
@@ -110,4 +108,9 @@ contract Create {
 
         return address(uint160(uint256(keccak256(data))));
     }
+
+    /**
+     * @dev Receive function to enable deployments of `bytecode` with a `payable` constructor. 
+     */
+    receive() external payable {}
 }

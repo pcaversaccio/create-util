@@ -1,5 +1,5 @@
-const DeployBytecode = artifacts.require("DeployBytecode");
+const Create = artifacts.require("Create");
 
 module.exports = function (deployer) {
-  deployer.deploy(DeployBytecode);
+  deployer.deploy(Create);
 };
