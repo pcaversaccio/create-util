@@ -110,7 +110,7 @@ contract Create {
     }
 
     /**
-     * @dev Receive function to enable deployments of `bytecode` with a `payable` constructor. 
+     * @dev Receive function to enable deployments of `bytecode` with a `payable` constructor.
      */
     receive() external payable {}
 }

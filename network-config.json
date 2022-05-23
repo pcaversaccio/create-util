@@ -27,5 +27,10 @@
     "url": "https://goerli.infura.io/v3",
     "network_id": 5,
     "network_check_timeout": 90000
+  },
+  "sepolia": {
+    "url": "https://nunki.htznr.fault.dev/rpc",
+    "network_id": 11155111,
+    "network_check_timeout": 90000
   }
 }

@@ -50,6 +50,14 @@ module.exports = {
         }),
       network_id: config.goerli.network_id,
     },
+    sepolia: {
+      provider: () =>
+        new HDWalletProvider({
+          mnemonic: { phrase: process.env.SEEDPHRASE },
+          providerOrUrl: `${config.sepolia.url}`,
+        }),
+      network_id: config.sepolia.network_id,
+    },
   },
 
   // Configure our compilers
