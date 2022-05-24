@@ -18,3 +18,7 @@ The smart contract [`Create.sol`](./contracts/Create.sol) also provides a functi
 - Kovan: [`0x3a923885708E6431A5215C501eae42e1b2e72baE`](https://kovan.etherscan.io/address/0x3a923885708E6431A5215C501eae42e1b2e72baE)
 - Goerli: [`0x14EBa15433A35085393D5fE77f186e20e64Fe133`](https://goerli.etherscan.io/address/0x14EBa15433A35085393D5fE77f186e20e64Fe133)
 - Sepolia: [`0xc8851BFCbE379cc058608cb548BC733F86448B3B`](https://sepolia.etherscan.io/address/0xc8851BFCbE379cc058608cb548BC733F86448B3B)
+
+## `CREATE2` Factory
+
+A helper smart contract to make easier and safer usage of the `CREATE2` EVM opcode can be found [here](https://github.com/pcaversaccio/create2deployer).
