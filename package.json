@@ -27,7 +27,7 @@
     "lint:fix": "npm run prettier:fix && npm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@ethereumjs/tx": "^3.5.1",
+    "@ethereumjs/tx": "^3.5.2",
     "@nomiclabs/hardhat-truffle5": "^2.0.6",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.6.0",
@@ -41,7 +41,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "ethereumjs-util": "^7.1.4",
+    "ethereumjs-util": "^7.1.5",
     "ethers": "^5.6.8",
     "hardhat": "^2.9.7",
     "prettier": "^2.6.2",
