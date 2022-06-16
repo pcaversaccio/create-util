@@ -19,6 +19,7 @@
     "url": "https://github.com/pcaversaccio/create-util/issues"
   },
   "scripts": {
+    "test": "npx hardhat test",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
     "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
