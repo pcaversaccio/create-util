@@ -3,7 +3,6 @@ const { balance, BN, ether, send } = require("@openzeppelin/test-helpers");
 const { expect } = require("chai");
 const { Address } = require("ethereumjs-util");
 const { web3 } = require("hardhat");
-const { expectRevertCustomError } = require("./customError");
 
 const Create = artifacts.require("Create");
 const ERC20Mock = artifacts.require("ERC20Mock");
@@ -156,24 +155,21 @@ contract("Create", function (accounts) {
     });
 
     it("fails deploying a contract with invalid constructor bytecode", async function () {
-      await expectRevertCustomError(
-        this.factory.deploy(0, 0x1),
-        `Failed("${this.factory.address}")`
-      );
+      expect(await this.factory.deploy(0, 0x1))
+        .to.be.expectRevertCustomError(this.factory, "Failed")
+        .withArgs(this.factory.address);
     });
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
-      await expectRevertCustomError(
-        this.factory.deploy(0, "0x"),
-        `ZeroBytecodeLength("${this.factory.address}")`
-      );
+      expect(await this.factory.deploy(0, "0x"))
+        .to.be.expectRevertCustomError(this.factory, "ZeroBytecodeLength")
+        .withArgs(this.factory.address);
     });
 
     it("fails deploying a contract if factory contract does not have sufficient balance", async function () {
-      await expectRevertCustomError(
-        this.factory.deploy(1, constructorByteCode),
-        `InsufficientBalance("${this.factory.address}")`
-      );
+      expect(await this.factory.deploy(1, constructorByteCode))
+        .to.be.expectRevertCustomError(this.factory, "InsufficientBalance")
+        .withArgs(this.factory.address);
     });
   });
 });

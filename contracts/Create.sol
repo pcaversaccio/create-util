@@ -44,7 +44,8 @@ contract Create {
         public
         returns (address newContract)
     {
-        if (address(this).balance < amount) revert InsufficientBalance(address(this));
+        if (address(this).balance < amount)
+            revert InsufficientBalance(address(this));
         if (bytecode.length == 0) revert ZeroBytecodeLength(address(this));
         // solhint-disable-next-line no-inline-assembly
         assembly ("memory-safe") {
