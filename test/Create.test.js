@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable func-names */
 const { balance, BN, ether, send } = require("@openzeppelin/test-helpers");
 const { expect } = require("chai");
 const { Address } = require("ethereumjs-util");

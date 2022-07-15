@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 require("dotenv").config();
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const config = require("./network-config.json");

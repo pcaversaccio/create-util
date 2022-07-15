@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
