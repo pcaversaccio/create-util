@@ -35,8 +35,5 @@ jobs:
       - name: Install npm project with a clean slate
         run: npm ci --prefer-offline
 
-      - name: Prettier
-        run: npm run prettier:check
-
-      - name: Lint
+      - name: Prettier and lint
         run: npm run lint:check
