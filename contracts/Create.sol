@@ -20,6 +20,12 @@ error InsufficientBalance(address emitter);
 error ZeroBytecodeLength(address emitter);
 
 /**
+ * @dev Error that occurs when the nonce value is invalid.
+ * @param emitter The contract that emits the error.
+ */
+error InvalidNonceValue(address emitter);
+
+/**
  * @title CREATE Deployer Smart Contract
  * @author Pascal Marco Caversaccio, pascal.caversaccio@hotmail.ch
  * @notice Helper smart contract to make easier and safer usage of the `CREATE` EVM opcode.
@@ -89,9 +95,16 @@ contract Create {
      * Thus, the first contract address created by another contract is calculated with a non-zero nonce.
      */
     // prettier-ignore
-    function computeAddress(address addr, uint256 nonce) public pure returns (address) {
+    function computeAddress(address addr, uint256 nonce) public view returns (address) {
         bytes memory data;
         bytes1 len = bytes1(0x94);
+
+        /** 
+         * @dev The theoretical limit for an account nonce is uint64; see e.g. here:
+         * https://github.com/ethereum/go-ethereum/blob/master/core/types/transaction.go#L280.
+         * We assume, however, that nobody can have a nonce large enough to require more than 4 bytes.
+         */
+        if (nonce > type(uint32).max) revert InvalidNonceValue(address(this));
 
         if (nonce == 0x00) data = abi.encodePacked(bytes1(0xd6), len, addr, bytes1(0x80));
         else if (nonce <= 0x7f) data = abi.encodePacked(bytes1(0xd6), len, addr, uint8(nonce));
@@ -104,7 +117,6 @@ contract Create {
          * 0xda = 0xc0 (short RLP prefix) + 0x16 (length of: 0x94 ++ address ++ 0x84 ++ nonce),
          * 0x94 = 0x80 + 0x14 (0x14 = the length of an address, 20 bytes, in hex),
          * 0x84 = 0x80 + 0x04 (0x04 = the bytes length of the nonce, 4 bytes, in hex).
-         * We assume, however, that nobody can have a nonce large enough to require more than 4 bytes.
          */
         else data = abi.encodePacked(bytes1(0xda), len, addr, bytes1(0x84), uint32(nonce));
 

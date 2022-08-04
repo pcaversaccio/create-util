@@ -124,6 +124,17 @@ contract("Create", function (accounts) {
         web3.utils.toChecksumAddress(offChainComputed)
       );
     });
+
+    it("reverts if the nonce is larger than type(uint32).max", async function () {
+      setNonce(this.factory.address, "0xffffffffa");
+      await expectRevertCustomError(
+        this.factory.computeAddress(
+          this.factory.address,
+          await web3.eth.getTransactionCount(this.factory.address)
+        ),
+        `InvalidNonceValue("${this.factory.address}")`
+      );
+    });
   });
 
   describe("deploy", function () {
