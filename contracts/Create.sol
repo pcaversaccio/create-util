@@ -104,7 +104,7 @@ contract Create {
          * 0xda = 0xc0 (short RLP prefix) + 0x16 (length of: 0x94 ++ address ++ 0x84 ++ nonce),
          * 0x94 = 0x80 + 0x14 (0x14 = the length of an address, 20 bytes, in hex),
          * 0x84 = 0x80 + 0x04 (0x04 = the bytes length of the nonce, 4 bytes, in hex).
-         * We assume nobody can have a nonce large enough to require more than 4 bytes.
+         * We assume, however, that nobody can have a nonce large enough to require more than 4 bytes.
          */
         else data = abi.encodePacked(bytes1(0xda), len, addr, bytes1(0x84), uint32(nonce));
 
