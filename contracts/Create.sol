@@ -100,10 +100,10 @@ contract Create {
         bytes1 len = bytes1(0x94);
 
         /** 
-         * @dev The theoretical limit for an account nonce is uint64; see e.g. here:
-         * https://github.com/ethereum/go-ethereum/blob/master/core/types/transaction.go#L280.
+         * @dev The theoretical allowed limit, based on EIP-2681, for an account nonce is 2**64-2:
+         * https://eips.ethereum.org/EIPS/eip-2681.
          */
-        if (nonce > type(uint64).max) revert InvalidNonceValue(address(this));
+        if (nonce > type(uint64).max - 1) revert InvalidNonceValue(address(this));
 
         /** 
          * @dev The integer zero is treated as an empty byte string and therefore has only one

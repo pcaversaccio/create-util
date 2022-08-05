@@ -173,25 +173,25 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 10: nonce <= uint64", async function () {
-      setNonce(this.factory.address, new BN(0xffffffffffffffffn));
+    it("computes the correct contract address - case 10: nonce < uint64", async function () {
+      setNonce(this.factory.address, new BN(0xfffffffffffffffen));
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
-        0xffffffffffffffffn
+        0xfffffffffffffffen
       );
       const from = Address.fromString(this.factory.address);
       const offChainComputed = Address.generate(
         from,
-        new BN(0xffffffffffffffffn)
+        new BN(0xfffffffffffffffen)
       );
       expect(onChainComputed).to.equal(
         web3.utils.toChecksumAddress(offChainComputed.toString("hex"))
       );
     });
 
-    it("reverts if the nonce is larger than type(uint64).max", async function () {
+    it("reverts if the nonce is larger than type(uint64).max - 1", async function () {
       await expectRevertCustomError(
-        this.factory.computeAddress(this.factory.address, 0xffffffffffffffffan),
+        this.factory.computeAddress(this.factory.address, 0xffffffffffffffffn),
         `InvalidNonceValue("${this.factory.address}")`
       );
     });
