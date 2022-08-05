@@ -45,7 +45,7 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 2: nonce 0x7f", async function () {
+    it("computes the correct contract address - case 2: nonce <= 0x7f", async function () {
       setNonce(this.factory.address, "0x7f");
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
@@ -61,7 +61,7 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 3: nonce 0xff", async function () {
+    it("computes the correct contract address - case 3: nonce <= uint8", async function () {
       setNonce(this.factory.address, "0xff");
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
@@ -77,7 +77,7 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 4: nonce 0xffff", async function () {
+    it("computes the correct contract address - case 4: nonce <= uint16", async function () {
       setNonce(this.factory.address, "0xffff");
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
@@ -93,7 +93,7 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 5: nonce 0xffffff", async function () {
+    it("computes the correct contract address - case 5: nonce <= uint24", async function () {
       setNonce(this.factory.address, "0xffffff");
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
@@ -109,8 +109,8 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("computes the correct contract address - case 6: nonce 0xffffffa", async function () {
-      setNonce(this.factory.address, "0xffffffa");
+    it("computes the correct contract address - case 6: nonce <= uint32", async function () {
+      setNonce(this.factory.address, "0xffffffff");
       const onChainComputed = await this.factory.computeAddress(
         this.factory.address,
         await web3.eth.getTransactionCount(this.factory.address)
@@ -125,13 +125,73 @@ contract("Create", function (accounts) {
       );
     });
 
-    it("reverts if the nonce is larger than type(uint32).max", async function () {
-      setNonce(this.factory.address, "0xffffffffa");
+    it("computes the correct contract address - case 7: nonce <= uint40", async function () {
+      setNonce(this.factory.address, "0xffffffffff");
+      const onChainComputed = await this.factory.computeAddress(
+        this.factory.address,
+        await web3.eth.getTransactionCount(this.factory.address)
+      );
+      const from = Address.fromString(this.factory.address);
+      const offChainComputed = Address.generate(
+        from,
+        new BN(await web3.eth.getTransactionCount(from.toString()))
+      ).toString();
+      expect(onChainComputed).to.equal(
+        web3.utils.toChecksumAddress(offChainComputed)
+      );
+    });
+
+    it("computes the correct contract address - case 8: nonce <= uint48", async function () {
+      setNonce(this.factory.address, "0xffffffffffff");
+      const onChainComputed = await this.factory.computeAddress(
+        this.factory.address,
+        await web3.eth.getTransactionCount(this.factory.address)
+      );
+      const from = Address.fromString(this.factory.address);
+      const offChainComputed = Address.generate(
+        from,
+        new BN(await web3.eth.getTransactionCount(from.toString()))
+      ).toString();
+      expect(onChainComputed).to.equal(
+        web3.utils.toChecksumAddress(offChainComputed)
+      );
+    });
+
+    it("computes the correct contract address - case 9: nonce <= uint56", async function () {
+      setNonce(this.factory.address, new BN(0xffffffffffffffn));
+      const onChainComputed = await this.factory.computeAddress(
+        this.factory.address,
+        0xffffffffffffffn
+      );
+      const from = Address.fromString(this.factory.address);
+      const offChainComputed = Address.generate(
+        from,
+        new BN(0xffffffffffffffn)
+      );
+      expect(onChainComputed).to.equal(
+        web3.utils.toChecksumAddress(offChainComputed.toString("hex"))
+      );
+    });
+
+    it("computes the correct contract address - case 10: nonce <= uint64", async function () {
+      setNonce(this.factory.address, new BN(0xffffffffffffffffn));
+      const onChainComputed = await this.factory.computeAddress(
+        this.factory.address,
+        0xffffffffffffffffn
+      );
+      const from = Address.fromString(this.factory.address);
+      const offChainComputed = Address.generate(
+        from,
+        new BN(0xffffffffffffffffn)
+      );
+      expect(onChainComputed).to.equal(
+        web3.utils.toChecksumAddress(offChainComputed.toString("hex"))
+      );
+    });
+
+    it("reverts if the nonce is larger than type(uint64).max", async function () {
       await expectRevertCustomError(
-        this.factory.computeAddress(
-          this.factory.address,
-          await web3.eth.getTransactionCount(this.factory.address)
-        ),
+        this.factory.computeAddress(this.factory.address, 0xffffffffffffffffan),
         `InvalidNonceValue("${this.factory.address}")`
       );
     });
