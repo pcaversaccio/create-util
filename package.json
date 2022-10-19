@@ -28,7 +28,7 @@
     "lint:fix": "npm run prettier:fix && npm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@ethereumjs/tx": "^4.0.0",
+    "@ethereumjs/tx": "^4.0.1",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.1",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
