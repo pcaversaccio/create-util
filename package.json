@@ -28,7 +28,7 @@
     "lint:fix": "npm run prettier:fix && npm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@ethereumjs/tx": "^4.0.1",
+    "@ethereumjs/tx": "^4.0.2",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
@@ -46,9 +46,9 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "chai": "^4.3.7",
-    "decode-uri-component": ">=0.3.0",
+    "decode-uri-component": ">=0.4.0",
     "dotenv": "^16.0.3",
-    "eslint": "^8.29.0",
+    "eslint": "^8.30.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
