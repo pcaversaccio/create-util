@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 const { config } = require("hardhat");
 
 const optimizationsEnabled = config.solidity.compilers.some(
