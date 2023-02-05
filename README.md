@@ -11,13 +11,10 @@ The easiest way to think about it, which is also fairly accurate, is that the So
 
 The smart contract [`Create.sol`](./contracts/Create.sol) also provides a function `computeAddress` that returns (via the Recursive Length Prefix (RLP) encoding scheme) the address where a contract will be stored if deployed via `CREATE`.
 
-## Deployments
+## Test Deployments
 
-- Rinkeby: [`0x3e4BfDAa089dB5E854CfF9ABe1D9Dd3B8373E2e3`](https://rinkeby.etherscan.io/address/0x3e4BfDAa089dB5E854CfF9ABe1D9Dd3B8373E2e3)
-- Ropsten: [`0x1f569322C9b88d61984b18D1251460C83d7B1D34`](https://ropsten.etherscan.io/address/0x1f569322C9b88d61984b18D1251460C83d7B1D34)
-- Kovan: [`0x3a923885708E6431A5215C501eae42e1b2e72baE`](https://kovan.etherscan.io/address/0x3a923885708E6431A5215C501eae42e1b2e72baE)
-- Goerli: [`0x14EBa15433A35085393D5fE77f186e20e64Fe133`](https://goerli.etherscan.io/address/0x14EBa15433A35085393D5fE77f186e20e64Fe133)
-- Sepolia: [`0xc8851BFCbE379cc058608cb548BC733F86448B3B`](https://sepolia.etherscan.io/address/0xc8851BFCbE379cc058608cb548BC733F86448B3B)
+- Goerli: [`0xD14d8539401be204B50c67339b267ca8DDd7Ce31`](https://goerli.etherscan.io/address/0xD14d8539401be204B50c67339b267ca8DDd7Ce31)
+- Sepolia: [`0xed50324e21879ea04ec0822281a320A875D9D9E9`](https://sepolia.etherscan.io/address/0xed50324e21879ea04ec0822281a320A875D9D9E9)
 
 ## `CREATE2` Factory
 

@@ -1,11 +1,4 @@
 node_modules
-lib
 cache
 artifacts
 build
-typechain-types
-coverage
-deployments
-forge-artifacts
-bin
-out
