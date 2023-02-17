@@ -40,7 +40,7 @@
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.8.1",
     "@openzeppelin/test-helpers": "^0.5.16",
-    "@truffle/hdwallet-provider": "^2.1.6",
+    "@truffle/hdwallet-provider": "^2.1.7",
     "@typechain/ethers-v5": "^10.2.0",
     "@typechain/hardhat": "^6.1.5",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
