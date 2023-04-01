@@ -53,7 +53,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "ethereumjs-util": "^7.1.5",
-    "ethers": "^5.7.2",
+    "ethers": "^6.0.0",
     "hardhat": "^2.13.0",
     "hardhat-gas-reporter": "^1.0.9",
     "http-cache-semantics": ">=4.1.1",
