@@ -6,7 +6,9 @@ require("@nomicfoundation/hardhat-chai-matchers");
 
 module.exports = {
   solidity: {
-    version: "0.8.19",
+    // Only use Solidity versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
+    // Otherwise, use the versions `<=0.8.19`
+    version: "0.8.20",
     settings: {
       optimizer: {
         enabled: true,
