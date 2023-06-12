@@ -10,9 +10,11 @@ describe("Create", function () {
 
   let deployerAccount: SignerWithAddress;
   let Alice: SignerWithAddress;
+
   let erc20Mock: Contract;
   let create: Contract;
   let createAddr: string;
+
   let creationBytecode: ContractDeployTransaction;
 
   beforeEach(async function () {
@@ -41,7 +43,7 @@ describe("Create", function () {
   describe("computeAddress", function () {
     it("computes the correct contract address - case 1: nonce 0x00", async function () {
       const nonce = 0x00;
-      const onChainComputed = await create.computeAddress(Alice, nonce);
+      const onChainComputed = await create.computeAddress(Alice.address, nonce);
       const offChainComputed = ethers.getCreateAddress({
         from: Alice.address,
         nonce: nonce,
