@@ -13,8 +13,8 @@ The smart contract [`Create.sol`](./contracts/Create.sol) also provides a functi
 
 ## Test Deployments
 
-- Goerli: [`0xD14d8539401be204B50c67339b267ca8DDd7Ce31`](https://goerli.etherscan.io/address/0xD14d8539401be204B50c67339b267ca8DDd7Ce31)
-- Sepolia: [`0xed50324e21879ea04ec0822281a320A875D9D9E9`](https://sepolia.etherscan.io/address/0xed50324e21879ea04ec0822281a320A875D9D9E9)
+- Goerli: [`0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F`](https://goerli.etherscan.io/address/0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F)
+- Sepolia: [`0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F`](https://sepolia.etherscan.io/address/0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F)
 
 ## `CREATE2` Factory
 
