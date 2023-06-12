@@ -1,1 +1,6 @@
 node_modules
+cache
+artifacts
+typechain-types
+coverage
+deployments
