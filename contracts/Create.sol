@@ -87,8 +87,8 @@ contract Create {
      * @dev Returns the address where a contract will be stored if deployed via `deploy`.
      * For the specification of the Recursive Length Prefix (RLP) encoding scheme, please
      * refer to p. 19 of the Ethereum Yellow Paper (https://ethereum.github.io/yellowpaper/paper.pdf)
-     * and the Ethereum Wiki (https://eth.wiki/fundamentals/rlp). For further insights also, see the
-     * following issue: https://github.com/Rari-Capital/solmate/issues/207.
+     * and the Ethereum Wiki (https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/).
+     * For further insights also, see the following issue: https://github.com/transmissions11/solmate/issues/207.
      *
      * Based on the EIP-161 (https://github.com/ethereum/EIPs/blob/master/EIPS/eip-161.md) specification,
      * all contract accounts on the Ethereum mainnet are initiated with `nonce = 1`.
