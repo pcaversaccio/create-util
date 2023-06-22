@@ -1,7 +1,7 @@
 # `CREATE` Factory
 
 [![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/create-util/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/create-util/actions/workflows/test-contracts.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/mit/)
 
 Helper smart contract [`Create.sol`](./contracts/Create.sol) to make easier and safer usage of the [`CREATE`](https://www.evm.codes/#f0) Ethereum Virtual Machine (EVM) opcode. `CREATE`, in a way, does a built-in call. What actually happens is that the data passed to that call isn't the contract bytecode, it's the **init bytecode** (a.k.a. creation bytecode).
 

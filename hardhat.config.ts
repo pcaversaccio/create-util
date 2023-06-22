@@ -75,24 +75,6 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    rinkeby: {
-      chainId: 4,
-      url: process.env.ETH_RINKEBY_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    kovan: {
-      chainId: 42,
-      url: process.env.ETH_KOVAN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    ropsten: {
-      chainId: 3,
-      url: process.env.ETH_ROPSTEN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     goerli: {
       chainId: 5,
       url: process.env.ETH_GOERLI_TESTNET_URL || "",
@@ -285,18 +267,6 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    autobahnTestnet: {
-      chainId: 45001,
-      url: process.env.AUTOBAHN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    autobahn: {
-      chainId: 45000,
-      url: process.env.AUTOBAHN_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     spark: {
       chainId: 123,
       url: process.env.FUSE_TESTNET_URL || "",
@@ -370,7 +340,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     filecoinTestnet: {
-      chainId: 3141,
+      chainId: 314159,
       url: process.env.FILECOIN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -390,6 +360,18 @@ const config: HardhatUserConfig = {
     shimmerEVMTestnet: {
       chainId: 1071,
       url: process.env.SHIMMEREVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    zoraTestnet: {
+      chainId: 999,
+      url: process.env.ZORA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    zoraMain: {
+      chainId: 7777777,
+      url: process.env.ZORA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -429,12 +411,9 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      // For Mainnet, Ropsten, Rinkeby, Goerli, Kovan, Sepolia
+      // For Ethereum testnets & mainnet
       mainnet: process.env.ETHERSCAN_API_KEY || "",
-      ropsten: process.env.ETHERSCAN_API_KEY || "",
-      rinkeby: process.env.ETHERSCAN_API_KEY || "",
       goerli: process.env.ETHERSCAN_API_KEY || "",
-      kovan: process.env.ETHERSCAN_API_KEY || "",
       sepolia: process.env.ETHERSCAN_API_KEY || "",
       // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY || "",
@@ -467,9 +446,6 @@ const config: HardhatUserConfig = {
       // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY || "",
       harmonyTest: process.env.HARMONY_API_KEY || "",
-      // For Autobahn testnet & mainnet
-      autobahn: process.env.AUTOBAHN_API_KEY || "",
-      autobahnTestnet: process.env.AUTOBAHN_API_KEY || "",
       // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY || "",
       auroraTestnet: process.env.AURORA_API_KEY || "",
@@ -503,24 +479,11 @@ const config: HardhatUserConfig = {
       lineaTestnet: process.env.LINEA_API_KEY || "",
       // For ShimmerEVM testnet
       shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
+      // For Zora testnet & mainnet
+      zora: process.env.ZORA_API_KEY || "",
+      zoraTestnet: process.env.ZORA_API_KEY || "",
     },
     customChains: [
-      {
-        network: "autobahn",
-        chainId: 45000,
-        urls: {
-          apiURL: "https://autobahn-explorer.com/api",
-          browserURL: "https://autobahn-explorer.com",
-        },
-      },
-      {
-        network: "autobahnTestnet",
-        chainId: 45001,
-        urls: {
-          apiURL: "https://testnet.autobahn-explorer.com/api",
-          browserURL: "https://testnet.autobahn-explorer.com",
-        },
-      },
       {
         network: "chiado",
         chainId: 10200,
@@ -605,16 +568,16 @@ const config: HardhatUserConfig = {
         network: "canto",
         chainId: 7700,
         urls: {
-          apiURL: "https://evm.explorer.canto.io/api",
-          browserURL: "https://evm.explorer.canto.io",
+          apiURL: "https://tuber.build/api",
+          browserURL: "https://tuber.build",
         },
       },
       {
         network: "cantoTestnet",
         chainId: 7701,
         urls: {
-          apiURL: "https://testnet-explorer.canto.neobase.one/api",
-          browserURL: "https://testnet-explorer.canto.neobase.one",
+          apiURL: "https://testnet.tuber.build/api",
+          browserURL: "https://testnet.tuber.build",
         },
       },
       {
@@ -671,6 +634,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.evm.testnet.shimmer.network/api",
           browserURL: "https://explorer.evm.testnet.shimmer.network",
+        },
+      },
+      {
+        network: "zora",
+        chainId: 7777777,
+        urls: {
+          apiURL: "https://explorer.zora.energy/api",
+          browserURL: "https://explorer.zora.energy",
+        },
+      },
+      {
+        network: "zoraTestnet",
+        chainId: 999,
+        urls: {
+          apiURL: "https://testnet.explorer.zora.co/api",
+          browserURL: "https://testnet.explorer.zora.co",
         },
       },
     ],
