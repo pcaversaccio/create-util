@@ -23,7 +23,7 @@ describe("Create", function () {
     erc20Mock = await ethers.deployContract(
       "ERC20Mock",
       [name, symbol, deployerAccount, initialBalance],
-      { from: deployerAccount }
+      { from: deployerAccount },
     );
     erc20Mock.waitForDeployment();
 
@@ -36,7 +36,7 @@ describe("Create", function () {
       name,
       symbol,
       deployerAccount,
-      initialBalance
+      initialBalance,
     );
   });
 
@@ -154,7 +154,7 @@ describe("Create", function () {
         .to.emit(create, "ContractCreation")
         .withArgs(await create.computeAddress(createAddr, 1));
       expect(await erc20Mock.balanceOf(deployerAccount)).to.equal(
-        initialBalance
+        initialBalance,
       );
     });
 
@@ -167,7 +167,7 @@ describe("Create", function () {
         .to.emit(create, "ContractCreation")
         .withArgs(offChainComputed);
       expect(await ethers.provider.getBalance(offChainComputed)).to.equal(
-        deposit
+        deposit,
       );
     });
 
