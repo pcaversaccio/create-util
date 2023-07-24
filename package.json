@@ -107,7 +107,7 @@
     "@nomicfoundation/hardhat-verify": "^1.0.4",
     "@openzeppelin/contracts": "^4.9.2",
     "@typechain/ethers-v6": "^0.4.2",
-    "@typechain/hardhat": "^8.0.2",
+    "@typechain/hardhat": "^8.0.3",
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.4.4",
