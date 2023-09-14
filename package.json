@@ -93,6 +93,7 @@
     "deploy:luksotestnet": "npx hardhat run --network luksoTestnet scripts/deploy.ts",
     "deploy:luksomain": "npx hardhat run --network luksoMain scripts/deploy.ts",
     "deploy:mantatestnet": "npx hardhat run --network mantaTestnet scripts/deploy.ts",
+    "deploy:mantamain": "npx hardhat run --network mantaMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
     "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
@@ -132,6 +133,6 @@
     "typechain": "^8.3.1",
     "typescript": "^5.2.2",
     "undici": "^5.24.0",
-    "xdeployer": "^2.1.5"
+    "xdeployer": "^2.1.6"
   }
 }
