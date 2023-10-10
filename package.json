@@ -111,14 +111,14 @@
     "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@nomicfoundation/hardhat-verify": "^1.1.1",
-    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts": "^5.0.0",
     "@typechain/ethers-v6": "^0.4.3",
     "@typechain/hardhat": "^8.0.3",
-    "@types/chai": "^4.3.6",
+    "@types/chai": "^4.3.7",
     "@types/mocha": "^10.0.2",
-    "@types/node": "^20.8.3",
-    "@typescript-eslint/eslint-plugin": "^6.7.4",
-    "@typescript-eslint/parser": "^6.7.4",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
     "chai": "^4.3.10",
     "dotenv": "^16.3.1",
     "eslint": "^8.51.0",
@@ -136,6 +136,6 @@
     "typechain": "^8.3.1",
     "typescript": "^5.2.2",
     "undici": "^5.25.4",
-    "xdeployer": "^2.1.8"
+    "xdeployer": "^2.1.9"
   }
 }
