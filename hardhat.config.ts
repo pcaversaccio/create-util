@@ -584,8 +584,18 @@ const config: HardhatUserConfig = {
           : [],
     },
     scrollTestnet: {
-      chainId: 534353,
+      chainId: 534351,
       url: process.env.SCROLL_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
+    scrollMain: {
+      chainId: 534352,
+      url: process.env.SCROLL_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       ledgerAccounts:
@@ -805,7 +815,8 @@ const config: HardhatUserConfig = {
       // For Mantle testnet & mainnet
       mantle: process.env.MANTLE_API_KEY || "",
       mantleTestnet: process.env.MANTLE_API_KEY || "",
-      // For Scroll testnet
+      // For Scroll testnet & mainnet
+      scroll: process.env.SCROLL_API_KEY || "",
       scrollTestnet: process.env.SCROLL_API_KEY || "",
       // For Linea testnet & mainnet
       linea: process.env.LINEA_API_KEY || "",
@@ -970,11 +981,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "scrollTestnet",
-        chainId: 534353,
+        network: "scroll",
+        chainId: 534352,
         urls: {
-          apiURL: "https://blockscout.scroll.io/api",
-          browserURL: "https://blockscout.scroll.io",
+          apiURL: "https://api.scrollscan.com/api",
+          browserURL: "https://scrollscan.com",
+        },
+      },
+      {
+        network: "scrollTestnet",
+        chainId: 534351,
+        urls: {
+          apiURL: "https://api-sepolia.scrollscan.com/api",
+          browserURL: "https://sepolia.scrollscan.com",
         },
       },
       {

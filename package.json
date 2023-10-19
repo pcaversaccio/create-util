@@ -86,6 +86,7 @@
     "deploy:mantlemain": "npx hardhat run --network mantleMain scripts/deploy.ts",
     "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
     "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
+    "deploy:scrollmain": "npx hardhat run --network scrollMain scripts/deploy.ts",
     "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
     "deploy:lineamain": "npx hardhat run --network lineaMain scripts/deploy.ts",
     "deploy:shimmerevmtestnet": "npx hardhat run --network shimmerEVMTestnet scripts/deploy.ts",
@@ -114,9 +115,9 @@
     "@openzeppelin/contracts": "^5.0.0",
     "@typechain/ethers-v6": "^0.4.3",
     "@typechain/hardhat": "^8.0.3",
-    "@types/chai": "^4.3.8",
-    "@types/mocha": "^10.0.2",
-    "@types/node": "^20.8.6",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.7",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "chai": "^4.3.10",
@@ -135,7 +136,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.26.3",
+    "undici": "^5.26.4",
     "xdeployer": "^2.1.9"
   }
 }
