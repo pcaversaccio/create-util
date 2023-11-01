@@ -763,7 +763,7 @@ const config: HardhatUserConfig = {
     runOnCompile: true,
     clear: true,
     flat: false,
-    only: [],
+    only: ["Create"],
     spacing: 2,
     pretty: true,
   },
