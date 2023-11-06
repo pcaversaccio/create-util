@@ -30,6 +30,7 @@
     "compile": "npx hardhat compile",
     "size": "npx hardhat size-contracts",
     "xdeploy": "npx hardhat xdeploy",
+    "abi": "npx hardhat export-abi",
     "vars:path": "npx hardhat vars path",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
