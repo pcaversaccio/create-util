@@ -30,7 +30,7 @@
     "compile": "npx hardhat compile",
     "size": "npx hardhat size-contracts",
     "xdeploy": "npx hardhat xdeploy",
-    "abi": "npx hardhat export-abi",
+    "vars:path": "npx hardhat vars path",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
     "deploy:dashboard": "npx hardhat run --network truffleDashboard scripts/deploy.ts",
@@ -87,6 +87,7 @@
     "deploy:mantletestnet": "npx hardhat run --network mantleTestnet scripts/deploy.ts",
     "deploy:mantlemain": "npx hardhat run --network mantleMain scripts/deploy.ts",
     "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
+    "deploy:filecoinmain": "npx hardhat run --network filecoinMain scripts/deploy.ts",
     "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
     "deploy:scrollmain": "npx hardhat run --network scrollMain scripts/deploy.ts",
     "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
@@ -104,8 +105,8 @@
     "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
     "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix",
-    "lint:check": "npm run prettier:check && npm run solhint:check && npx eslint **/*.{js,ts}",
-    "lint:fix": "npm run prettier:fix && npm run solhint:fix && npx eslint **/*.{js,ts} --fix"
+    "lint:check": "pnpm prettier:check && pnpm solhint:check && npx eslint **/*.{js,ts}",
+    "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
@@ -123,11 +124,10 @@
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "chai": "^4.3.10",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "ethers": "^6.8.1",
-    "hardhat": "^2.18.3",
+    "hardhat": "^2.19.0",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^1.0.9",
@@ -138,7 +138,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.27.0",
     "xdeployer": "^2.1.12"
   }
 }
