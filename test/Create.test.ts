@@ -1,7 +1,8 @@
 import { expect } from "chai";
-import { Contract, ContractDeployTransaction } from "ethers";
+import { ContractDeployTransaction } from "ethers";
 import { ethers } from "hardhat";
 import { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
+import { ERC20Mock, Create } from "../typechain-types";
 
 describe("Create", function () {
   const name = "MyToken";
@@ -11,8 +12,8 @@ describe("Create", function () {
   let deployerAccount: SignerWithAddress;
   let Alice: SignerWithAddress;
 
-  let erc20Mock: Contract;
-  let create: Contract;
+  let erc20Mock: ERC20Mock;
+  let create: Create;
   let createAddr: string;
 
   let creationBytecode: ContractDeployTransaction;
