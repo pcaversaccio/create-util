@@ -20,7 +20,7 @@ describe("Create", function () {
     [deployerAccount] = await hre.ethers.getSigners();
 
     create = await hre.ethers.deployContract("Create", deployerAccount);
-    create.waitForDeployment();
+    await create.waitForDeployment();
     createAddr = await create.getAddress();
 
     const ERC20Mock = await hre.ethers.getContractFactory("ERC20Mock");
