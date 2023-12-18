@@ -93,8 +93,8 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   xdeployer:
-    specifier: ^2.2.1
-    version: 2.2.1(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
+    specifier: ^2.2.2
+    version: 2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
 
 packages:
   /@aashutoshrathi/word-wrap@1.2.6:
@@ -7648,10 +7648,10 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@2.2.1(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2):
+  /xdeployer@2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2):
     resolution:
       {
-        integrity: sha512-ZMqLklGeRrBwUMwz571W+uUw/XC092QnnjQ+w3FEFaxHU5AI35exyi0BJq9kQ2k3GgfKBTJwwcgaP/L7TzulYg==,
+        integrity: sha512-CmkADnwn9M7J33Rrb1sbaI5mBaXrRr2kLEw5W6QMeTJkXw57ae7/IIBYHDbuFLu7L60J3ZF21KdpHjmSMkUsVQ==,
       }
     engines: { node: ">=14.0.0" }
     peerDependencies:
