@@ -138,6 +138,6 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.3.3",
-    "xdeployer": "^2.2.1"
+    "xdeployer": "^2.2.2"
   }
 }
