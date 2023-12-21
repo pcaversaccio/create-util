@@ -371,7 +371,7 @@ const config: HardhatUserConfig = {
     },
     bobaMain: {
       chainId: 288,
-      url: vars.get("BOBA_MAINNET_URL", "https://mainnet.boba.network"),
+      url: vars.get("BOBA_MAINNET_URL", "https://replica.boba.network"),
       accounts,
       ledgerAccounts,
     },
@@ -466,8 +466,8 @@ const config: HardhatUserConfig = {
       ledgerAccounts,
     },
     zoraTestnet: {
-      chainId: 999,
-      url: vars.get("ZORA_TESTNET_URL", "https://testnet.rpc.zora.energy"),
+      chainId: 999999999,
+      url: vars.get("ZORA_TESTNET_URL", "https://sepolia.rpc.zora.energy"),
       accounts,
       ledgerAccounts,
     },
@@ -516,6 +516,12 @@ const config: HardhatUserConfig = {
     artheraTestnet: {
       chainId: 10243,
       url: vars.get("ARTHERA_TESTNET_URL", "https://rpc-test.arthera.net"),
+      accounts,
+      ledgerAccounts,
+    },
+    frameTestnet: {
+      chainId: 68840142,
+      url: vars.get("FRAME_TESTNET_URL", "https://rpc.testnet.frame.xyz/http"),
       accounts,
       ledgerAccounts,
     },
@@ -601,6 +607,9 @@ const config: HardhatUserConfig = {
       moonbeam: vars.get("MOONBEAM_API_KEY", ""),
       moonriver: vars.get("MOONBEAM_API_KEY", ""),
       moonbaseAlpha: vars.get("MOONBEAM_API_KEY", ""),
+      // For Celo testnet & mainnet
+      celo: vars.get("CELO_API_KEY", ""),
+      alfajores: vars.get("CELO_API_KEY", ""),
       // For Harmony testnet & mainnet
       harmony: vars.get("HARMONY_API_KEY", ""),
       harmonyTest: vars.get("HARMONY_API_KEY", ""),
@@ -633,6 +642,9 @@ const config: HardhatUserConfig = {
       // For Mantle testnet & mainnet
       mantle: vars.get("MANTLE_API_KEY", ""),
       mantleTestnet: vars.get("MANTLE_API_KEY", ""),
+      // For Filecoin testnet & mainnet
+      filecoin: vars.get("FILECOIN_API_KEY", ""),
+      filecoinTestnet: vars.get("FILECOIN_API_KEY", ""),
       // For Scroll testnet & mainnet
       scroll: vars.get("SCROLL_API_KEY", ""),
       scrollTestnet: vars.get("SCROLL_API_KEY", ""),
@@ -666,8 +678,8 @@ const config: HardhatUserConfig = {
         network: "optimisticSepolia",
         chainId: 11155420,
         urls: {
-          apiURL: "https://optimism-sepolia.blockscout.com/api",
-          browserURL: "https://optimism-sepolia.blockscout.com",
+          apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+          browserURL: "https://sepolia-optimism.etherscan.io",
         },
       },
       {
@@ -676,6 +688,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://gnosis-chiado.blockscout.com/api",
           browserURL: "https://gnosis-chiado.blockscout.com",
+        },
+      },
+      {
+        network: "celo",
+        chainId: 42220,
+        urls: {
+          apiURL: "https://explorer.celo.org/mainnet/api",
+          browserURL: "https://explorer.celo.org/mainnet",
+        },
+      },
+      {
+        network: "alfajores",
+        chainId: 44787,
+        urls: {
+          apiURL: "https://explorer.celo.org/alfajores/api",
+          browserURL: "https://explorer.celo.org/alfajores",
         },
       },
       {
@@ -730,7 +758,8 @@ const config: HardhatUserConfig = {
         network: "boba",
         chainId: 288,
         urls: {
-          apiURL: "https://api.bobascan.com/api",
+          apiURL:
+            "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan",
           browserURL: "https://bobascan.com",
         },
       },
@@ -738,7 +767,8 @@ const config: HardhatUserConfig = {
         network: "bobaTestnet",
         chainId: 2888,
         urls: {
-          apiURL: "https://api-testnet.bobascan.com/api",
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/2888/etherscan",
           browserURL: "https://testnet.bobascan.com",
         },
       },
@@ -815,6 +845,22 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "filecoin",
+        chainId: 314,
+        urls: {
+          apiURL: "https://filfox.info/api/v1/tools/verifyContract",
+          browserURL: "https://filfox.info/en",
+        },
+      },
+      {
+        network: "filecoinTestnet",
+        chainId: 314159,
+        urls: {
+          apiURL: "https://calibration.filfox.info/api/v1/tools/verifyContract",
+          browserURL: "https://calibration.filfox.info/en",
+        },
+      },
+      {
         network: "scroll",
         chainId: 534352,
         urls: {
@@ -880,10 +926,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "zoraTestnet",
-        chainId: 999,
+        chainId: 999999999,
         urls: {
-          apiURL: "https://testnet.explorer.zora.energy/api",
-          browserURL: "https://testnet.explorer.zora.energy",
+          apiURL: "https://sepolia.explorer.zora.energy/api",
+          browserURL: "https://sepolia.explorer.zora.energy",
         },
       },
       {
