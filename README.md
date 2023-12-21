@@ -19,4 +19,4 @@ The smart contract [`Create`](./contracts/Create.sol) also provides a function `
 
 ## `CREATE2` Factory
 
-A helper smart contract to make easier and safer usage of the [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) EVM opcode can be found [here](https://github.com/pcaversaccio/create2deployer).
+A helper smart contract to make easier and safer usage of the [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) EVM opcode can be found [here](https://github.com/pcaversaccio/create2deployer) (a.k.a. [`Create2Deployer`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol)) and [here](https://github.com/pcaversaccio/createx) (a.k.a. [`CreateX`](https://github.com/pcaversaccio/createx/blob/main/src/CreateX.sol); a versatile, permissionless, and trustless successor to `Create2Deployer`).
