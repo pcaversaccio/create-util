@@ -535,10 +535,10 @@ const config: HardhatUserConfig = {
       "0x087ee6a43229fddc3e140062b42bcff0c6d1c5a3bba8123976a59688e7024c25",
     ),
     signer: accounts[0],
-    networks: ["goerli", "sepolia"],
+    networks: ["sepolia", "holesky"],
     rpcUrls: [
-      vars.get("ETH_GOERLI_TESTNET_URL", "https://rpc.ankr.com/eth_goerli"),
       vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"),
+      vars.get("ETH_HOLESKY_TESTNET_URL", "https://holesky.rpc.thirdweb.com"),
     ],
     gasLimit: 1.2 * 10 ** 6,
   },
@@ -694,16 +694,16 @@ const config: HardhatUserConfig = {
         network: "celo",
         chainId: 42220,
         urls: {
-          apiURL: "https://explorer.celo.org/mainnet/api",
-          browserURL: "https://explorer.celo.org/mainnet",
+          apiURL: "https://api.celoscan.io/api",
+          browserURL: "https://celoscan.io",
         },
       },
       {
         network: "alfajores",
         chainId: 44787,
         urls: {
-          apiURL: "https://explorer.celo.org/alfajores/api",
-          browserURL: "https://explorer.celo.org/alfajores",
+          apiURL: "https://api-alfajores.celoscan.io/api",
+          browserURL: "https://alfajores.celoscan.io",
         },
       },
       {
