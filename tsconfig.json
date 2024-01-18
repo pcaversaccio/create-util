@@ -8,12 +8,12 @@
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
   },
   "include": [
     "./scripts/**/*.ts",
     "./test/**/*.ts",
-    "./typechain-types/**/*.ts"
+    "./typechain-types/**/*.ts",
   ],
-  "files": ["./hardhat.config.ts"]
+  "files": ["./hardhat.config.ts"],
 }
