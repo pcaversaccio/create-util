@@ -548,7 +548,7 @@ const config: HardhatUserConfig = {
     disambiguatePaths: false,
     strict: true,
     only: [],
-    except: [],
+    except: ["CreateX", "Create2DeployerLocal"],
   },
   gasReporter: {
     enabled: vars.has("REPORT_GAS") ? true : false,
