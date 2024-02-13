@@ -1,8 +1,10 @@
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
-import eslintConfigPrettier from "eslint-config-prettier";
+/* eslint-disable @typescript-eslint/no-var-requires */
+const eslint = require("@eslint/js");
+const tseslint = require("typescript-eslint");
+const eslintConfigPrettier = require("eslint-config-prettier");
+/* eslint-enable @typescript-eslint/no-var-requires */
 
-export default tseslint.config(
+module.exports = tseslint.config(
   {
     files: ["**/*.{js,ts}"],
     extends: [
