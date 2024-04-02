@@ -15,7 +15,6 @@ The smart contract [`Create`](./contracts/Create.sol) also provides a function `
 
 - Goerli: [`0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F`](https://goerli.etherscan.io/address/0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F)
 - Sepolia: [`0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F`](https://sepolia.etherscan.io/address/0x39E77F0B8738CE04c00361D3b24368Cd2dd0457F)
-- zkSync Era Testnet (Goerli): [`0xaFD8FbD7Ec35dd3149a410d3a7dD86c1fA197B70`](https://goerli.explorer.zksync.io/address/0xaFD8FbD7Ec35dd3149a410d3a7dD86c1fA197B70)
 
 ## `CREATE2` Factory
 
