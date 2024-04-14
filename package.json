@@ -148,6 +148,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.6.0",
-    "xdeployer": "^3.0.4"
+    "xdeployer": "^3.0.5"
   }
 }

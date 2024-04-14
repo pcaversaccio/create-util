@@ -90,8 +90,8 @@ devDependencies:
     specifier: ^7.6.0
     version: 7.6.0(eslint@8.57.0)(typescript@5.4.5)
   xdeployer:
-    specifier: ^3.0.4
-    version: 3.0.4(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.2)
+    specifier: ^3.0.5
+    version: 3.0.5(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.2)
 
 packages:
   /@aashutoshrathi/word-wrap@1.2.6:
@@ -6967,16 +6967,16 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@3.0.4(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.2):
+  /xdeployer@3.0.5(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.2):
     resolution:
       {
-        integrity: sha512-9dTh2Vq7Bkvcpi7lTe+3TVvt7+WRr5T7pE2Zt+TajZZZMU73r/wZcpQ+aOICPx9Lby3c6vSKM9TasOHy5OEO9g==,
+        integrity: sha512-yWpNlVoyt8rSuZd5U+Kb9vUSnmgHmjzAmpq76xNEV84dqUDJ87OgnftxLZQfBJKWe2l9ZbHhn4++Kk75QdBH1g==,
       }
     engines: { node: ">=14.0.0" }
     peerDependencies:
       "@nomicfoundation/hardhat-ethers": ^3.0.5
       ethers: ^6.11.1
-      hardhat: ^2.22.1
+      hardhat: ^2.22.2
     dependencies:
       "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.11.1)(hardhat@2.22.2)
       ethers: 6.11.1
