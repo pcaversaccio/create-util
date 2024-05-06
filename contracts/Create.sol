@@ -50,7 +50,8 @@ contract Create {
         if (address(this).balance < amount) revert InsufficientBalance(address(this));
         if (bytecode.length == 0) revert ZeroBytecodeLength(address(this));
         // solhint-disable-next-line no-inline-assembly
-        assembly ("memory-safe") {
+        /// @solidity memory-safe-assembly
+        assembly {
             /** @dev `CREATE` opcode
              *
              * Stack input
