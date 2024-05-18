@@ -8,8 +8,8 @@ importers:
   .:
     devDependencies:
       "@eslint/js":
-        specifier: ^9.2.0
-        version: 9.2.0
+        specifier: ^9.3.0
+        version: 9.3.0
       "@nomicfoundation/hardhat-chai-matchers":
         specifier: ^2.0.6
         version: 2.0.6(@nomicfoundation/hardhat-ethers@3.0.6(ethers@6.12.1)(hardhat@2.22.4(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)))(chai@4.4.1)(ethers@6.12.1)(hardhat@2.22.4(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5))
@@ -173,10 +173,10 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
 
-  "@eslint/js@9.2.0":
+  "@eslint/js@9.3.0":
     resolution:
       {
-        integrity: sha512-ESiIudvhoYni+MdsI8oD7skpprZ89qKocwRM2KEvhhBJ9nl5MRh7BXU5GTod7Mdygq+AUl+QzId6iWJKR/wABA==,
+        integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
@@ -2328,6 +2328,12 @@ packages:
     resolution:
       {
         integrity: sha512-H5KQDspykdHuztLTg+ajGN0Z2qUjcEf3Ybxc6hLt0k7/zPkn29XnKnxlBPyW2XIddWrGaJBzBl4VLYOtk39yZg==,
+      }
+
+  fp-ts@1.19.5:
+    resolution:
+      {
+        integrity: sha512-wDNqTimnzs8QqpldiId9OavWK2NptormjXnRJTQecNjzwfyp6P/8s/zG8e4h3ja3oqkKaY72UlTjQYt/1yXf9A==,
       }
 
   fs-constants@1.0.0:
@@ -4712,7 +4718,7 @@ snapshots:
 
   "@eslint/js@8.57.0": {}
 
-  "@eslint/js@9.2.0": {}
+  "@eslint/js@9.3.0": {}
 
   "@ethereumjs/rlp@4.0.1": {}
 
@@ -6165,6 +6171,8 @@ snapshots:
 
   fp-ts@1.19.3: {}
 
+  fp-ts@1.19.5: {}
+
   fs-constants@1.0.0: {}
 
   fs-extra@0.30.0:
@@ -6517,7 +6525,7 @@ snapshots:
 
   io-ts@1.10.4:
     dependencies:
-      fp-ts: 1.19.3
+      fp-ts: 1.19.5
 
   is-arrayish@0.2.1: {}
 
