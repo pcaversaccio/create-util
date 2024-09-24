@@ -785,6 +785,21 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    sapphireTestnet: {
+      chainId: 23295,
+      url: vars.get(
+        "SAPPHIRE_TESTNET_URL",
+        "https://testnet.sapphire.oasis.io",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    sapphireMain: {
+      chainId: 23294,
+      url: vars.get("SAPPHIRE_MAINNET_URL", "https://sapphire.oasis.io"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     contract: "Create",
@@ -978,6 +993,9 @@ const config: HardhatUserConfig = {
       // For 5ireChain testnet & mainnet
       "5ireChain": vars.get("5IRE_CHAIN_API_KEY", ""),
       "5ireChainTestnet": vars.get("5IRE_CHAIN_API_KEY", ""),
+      // For Oasis Sapphire testnet & mainnet
+      sapphire: vars.get("SAPPHIRE_API_KEY", ""),
+      sapphireTestnet: vars.get("SAPPHIRE_API_KEY", ""),
     },
     customChains: [
       {
@@ -1600,6 +1618,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.5irescan.io/api",
           browserURL: "https://testnet.5irescan.io",
+        },
+      },
+      {
+        network: "sapphire",
+        chainId: 23294,
+        urls: {
+          apiURL: "https://explorer.oasis.io/mainnet/sapphire/api",
+          browserURL: "https://explorer.oasis.io/mainnet/sapphire",
+        },
+      },
+      {
+        network: "sapphireTestnet",
+        chainId: 23295,
+        urls: {
+          apiURL: "https://explorer.oasis.io/testnet/sapphire/api",
+          browserURL: "https://explorer.oasis.io/testnet/sapphire",
         },
       },
     ],

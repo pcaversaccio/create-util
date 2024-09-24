@@ -140,6 +140,8 @@
     "deploy:zetachainmain": "npx hardhat run --network zetaChainMain scripts/deploy.ts",
     "deploy:5irechaintestnet": "npx hardhat run --network 5ireChainTestnet scripts/deploy.ts",
     "deploy:5irechainmain": "npx hardhat run --network 5ireChainMain scripts/deploy.ts",
+    "deploy:sapphiretestnet": "npx hardhat run --network sapphireTestnet scripts/deploy.ts",
+    "deploy:sapphiremain": "npx hardhat run --network sapphireMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -148,7 +150,7 @@
     "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.11.0",
+    "@eslint/js": "^9.11.1",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-ledger": "^1.0.3",
@@ -159,9 +161,9 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.19",
     "@types/mocha": "^10.0.8",
-    "@types/node": "^22.5.5",
+    "@types/node": "^22.6.1",
     "chai": "^4.5.0",
-    "eslint": "^9.11.0",
+    "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "ethers": "^6.13.2",
     "hardhat": "^2.22.11",
@@ -175,7 +177,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.6.0",
-    "xdeployer": "^3.1.0"
+    "typescript-eslint": "^8.7.0",
+    "xdeployer": "^3.1.1"
   }
 }
