@@ -800,6 +800,24 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    worldChainTestnet: {
+      chainId: 4801,
+      url: vars.get(
+        "WORLD_CHAIN_TESTNET_URL",
+        "https://worldchain-sepolia.g.alchemy.com/public",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    worldChainMain: {
+      chainId: 480,
+      url: vars.get(
+        "WORLD_CHAIN_MAINNET_URL",
+        "https://worldchain-mainnet.g.alchemy.com/public",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     contract: "Create",
@@ -996,6 +1014,9 @@ const config: HardhatUserConfig = {
       // For Oasis Sapphire testnet & mainnet
       sapphire: vars.get("SAPPHIRE_API_KEY", ""),
       sapphireTestnet: vars.get("SAPPHIRE_API_KEY", ""),
+      // For World Chain testnet & mainnet
+      worldChain: vars.get("WORLD_CHAIN_API_KEY", ""),
+      worldChainTestnet: vars.get("WORLD_CHAIN_API_KEY", ""),
     },
     customChains: [
       {
@@ -1634,6 +1655,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.oasis.io/testnet/sapphire/api",
           browserURL: "https://explorer.oasis.io/testnet/sapphire",
+        },
+      },
+      {
+        network: "worldChain",
+        chainId: 480,
+        urls: {
+          apiURL: "https://worldchain-mainnet.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-mainnet.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "worldChainTestnet",
+        chainId: 4801,
+        urls: {
+          apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
         },
       },
     ],
