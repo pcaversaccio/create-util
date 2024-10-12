@@ -824,6 +824,12 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    unichainTestnet: {
+      chainId: 1301,
+      url: vars.get("UNICHAIN_TESTNET_URL", "	https://sepolia.unichain.org"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     contract: "Create",
@@ -1025,6 +1031,8 @@ const config: HardhatUserConfig = {
       worldChainTestnet: vars.get("WORLD_CHAIN_API_KEY", ""),
       // For Plume testnet
       plumeTestnet: vars.get("PLUME_API_KEY", ""),
+      // For Unichain testnet
+      unichainTestnet: vars.get("UNICHAIN_API_KEY", ""),
     },
     customChains: [
       {
@@ -1687,6 +1695,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://test-explorer.plumenetwork.xyz/api",
           browserURL: "https://test-explorer.plumenetwork.xyz",
+        },
+      },
+      {
+        network: "unichainTestnet",
+        chainId: 1301,
+        urls: {
+          apiURL: "https://api-sepolia.uniscan.xyz/api",
+          browserURL: "https://sepolia.uniscan.xyz",
         },
       },
     ],
