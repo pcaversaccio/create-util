@@ -148,6 +148,8 @@
     "deploy:unichaintestnet": "npx hardhat run --network unichainTestnet scripts/deploy.ts",
     "deploy:xdctestnet": "npx hardhat run --network xdcTestnet scripts/deploy.ts",
     "deploy:xdcmain": "npx hardhat run --network xdcMain scripts/deploy.ts",
+    "deploy:sxtestnet": "npx hardhat run --network sxTestnet scripts/deploy.ts",
+    "deploy:sxmain": "npx hardhat run --network sxMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -167,12 +169,12 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.9",
-    "@types/node": "^22.7.8",
+    "@types/node": "^22.8.1",
     "chai": "^4.5.0",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "ethers": "^6.13.4",
-    "hardhat": "^2.22.14",
+    "hardhat": "^2.22.15",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^2.2.1",
@@ -184,6 +186,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.11.0",
-    "xdeployer": "^3.1.4"
+    "xdeployer": "^3.1.5"
   }
 }
