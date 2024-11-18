@@ -163,7 +163,7 @@
     "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.15.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-ledger": "^1.0.3",
