@@ -216,5 +216,13 @@
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.23.0",
     "xdeployer": "^3.1.10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "keccak",
+      "node-hid",
+      "secp256k1",
+      "usb"
+    ]
   }
 }
