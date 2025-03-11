@@ -93,8 +93,8 @@ importers:
         specifier: ^8.26.1
         version: 8.26.1(eslint@9.22.0)(typescript@5.8.2)
       xdeployer:
-        specifier: ^3.1.11
-        version: 3.1.11(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)))(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2))
+        specifier: ^3.1.12
+        version: 3.1.12(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)))(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2))
 
 packages:
 
@@ -2658,13 +2658,13 @@ packages:
       utf-8-validate:
         optional: true
 
-  xdeployer@3.1.11:
-    resolution: {integrity: sha512-nh1HADH95uc+Hapq8Zrgodycorvl1g4n2UiNBIhVh6KKIZHW+9mpSXHdRqw/Lxg2f/qsOeK4rnnAi8Q3uleyow==}
+  xdeployer@3.1.12:
+    resolution: {integrity: sha512-8cCoBgXU419Jo9keTcgdQE6PPrL8yN/tgx9gfEc69wqb9yHOZUBj7Rt1iQoTsPUSih7qz6238wNa1XXFLR4wvQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.0.8
       ethers: ^6.13.5
-      hardhat: ^2.22.18
+      hardhat: ^2.22.19
 
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
@@ -5587,7 +5587,7 @@ snapshots:
 
   ws@8.17.1: {}
 
-  xdeployer@3.1.11(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)))(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)):
+  xdeployer@3.1.12(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)))(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2)):
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.10)(typescript@5.8.2))(typescript@5.8.2))
       ethers: 6.13.5
