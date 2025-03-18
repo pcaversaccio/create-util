@@ -268,8 +268,8 @@ packages:
   '@ledgerhq/devices@8.4.4':
     resolution: {integrity: sha512-sz/ryhe/R687RHtevIE9RlKaV8kkKykUV4k29e7GAVwzHX1gqG+O75cu1NCJUHLbp3eABV5FdvZejqRUlLis9A==}
 
-  '@ledgerhq/domain-service@1.2.21':
-    resolution: {integrity: sha512-9TD1bO+J5DUTn7juL5/RH3SNKpMzle77jE683d0GJlxo71P/VNpIZujAow0vWcOQt1CCqiqCsZpUe1qA7zQPjw==}
+  '@ledgerhq/domain-service@1.2.22':
+    resolution: {integrity: sha512-ZfthEUVHc+kTZyBmdft0XGdBrJrAfkBF0j/yHxhGcYQ1oDPwadsd4fczyiM84S/AFIFWD5pAgyxe5DuXnFicVg==}
 
   '@ledgerhq/errors@6.19.1':
     resolution: {integrity: sha512-75yK7Nnit/Gp7gdrJAz0ipp31CCgncRp+evWt6QawQEtQKYEDfGo10QywgrrBBixeRxwnMy1DP6g2oCWRf1bjw==}
@@ -292,8 +292,8 @@ packages:
   '@ledgerhq/logs@6.12.0':
     resolution: {integrity: sha512-ExDoj1QV5eC6TEbMdLUMMk9cfvNKhhv5gXol4SmULRVCx/3iyCPhJ74nsb3S0Vb+/f+XujBEj3vQn5+cwS0fNA==}
 
-  '@ledgerhq/types-live@6.62.0':
-    resolution: {integrity: sha512-+pE3SL3iV73kgasQW6GUWU1yNGPdLmmYE4uPb11rhlB3naSXnRIDtk8W+0NX8CO2cPK1YcXwE60lEJN10NrNoQ==}
+  '@ledgerhq/types-live@6.63.0':
+    resolution: {integrity: sha512-a/cgQiESr/sdDio/VFOSa2c0wUVQkoM9mKJilfZb+Z4OpUxU+7ntFgRd2lN8tMuOuDYwrcRVljLOB8Ctw50s2w==}
 
   '@metamask/eth-sig-util@4.0.1':
     resolution: {integrity: sha512-tghyZKLHZjcdlDqCA3gNZmLeR0XvOE9U1qoQO9ohyAZT6Pya+H9vkBPcsyXytmYLNgVoin7CKCmweo/R43V+tQ==}
@@ -2936,11 +2936,11 @@ snapshots:
       rxjs: 7.8.2
       semver: 7.7.1
 
-  '@ledgerhq/domain-service@1.2.21(debug@4.4.0)':
+  '@ledgerhq/domain-service@1.2.22(debug@4.4.0)':
     dependencies:
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/logs': 6.12.0
-      '@ledgerhq/types-live': 6.62.0
+      '@ledgerhq/types-live': 6.63.0
       axios: 1.7.7(debug@4.4.0)
       eip55: 2.1.1
       react: 18.3.1
@@ -2955,7 +2955,7 @@ snapshots:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/rlp': 5.8.0
       '@ledgerhq/cryptoassets': 9.13.0
-      '@ledgerhq/domain-service': 1.2.21(debug@4.4.0)
+      '@ledgerhq/domain-service': 1.2.22(debug@4.4.0)
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/hw-transport': 6.31.4
       '@ledgerhq/hw-transport-mocker': 6.29.4
@@ -3000,7 +3000,7 @@ snapshots:
 
   '@ledgerhq/logs@6.12.0': {}
 
-  '@ledgerhq/types-live@6.62.0':
+  '@ledgerhq/types-live@6.63.0':
     dependencies:
       bignumber.js: 9.1.2
       rxjs: 7.8.2
