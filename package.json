@@ -19,7 +19,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.11.1",
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -208,8 +208,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
-    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
-    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.9",
+    "@nomicfoundation/hardhat-ethers": "^3.0.9",
     "@nomicfoundation/hardhat-ledger": "^1.1.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
     "@nomicfoundation/hardhat-verify": "^2.0.14",
