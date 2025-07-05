@@ -37,7 +37,7 @@ contract Create {
      * @dev Event that is emitted when a contract is successfully created.
      * @param newContract The address of the new contract.
      */
-    event ContractCreation(address newContract);
+    event ContractCreation(address indexed newContract);
 
     /**
      * @dev The function `deploy` deploys a new contract via calling

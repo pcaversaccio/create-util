@@ -3,7 +3,7 @@
   "error InsufficientBalance(address)",
   "error InvalidNonceValue(address)",
   "error ZeroBytecodeLength(address)",
-  "event ContractCreation(address)",
+  "event ContractCreation(address indexed)",
   "function computeAddress(address,uint256) view returns (address)",
   "function deploy(uint256,bytes) returns (address)"
 ]
