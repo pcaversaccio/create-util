@@ -82,7 +82,7 @@ contract Create {
     /**
      * @dev Returns the address where a contract will be stored if deployed via `deploy`.
      * For the specification of the Recursive Length Prefix (RLP) encoding scheme, please
-     * refer to p. 19 of the Ethereum Yellow Paper (https://ethereum.github.io/yellowpaper/paper.pdf)
+     * refer to p. 20 of the Ethereum Yellow Paper (https://ethereum.github.io/yellowpaper/paper.pdf)
      * and the Ethereum Wiki (https://ethereum.org/developers/docs/data-structures-and-encoding/rlp/).
      * For further insights also, see the following issue: https://github.com/transmissions11/solmate/issues/207.
      *
