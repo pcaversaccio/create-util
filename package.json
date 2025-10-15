@@ -242,7 +242,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.1",
-    "xdeployer": "^3.1.17"
+    "xdeployer": "^3.1.18"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

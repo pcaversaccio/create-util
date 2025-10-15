@@ -93,8 +93,8 @@ importers:
         specifier: ^8.46.1
         version: 8.46.1(eslint@9.37.0)(typescript@5.9.3)
       xdeployer:
-        specifier: ^3.1.17
-        version: 3.1.17(@nomicfoundation/hardhat-ethers@3.1.0(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)))(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3))
+        specifier: ^3.1.18
+        version: 3.1.18(@nomicfoundation/hardhat-ethers@3.1.0(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)))(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3))
 
 packages:
 
@@ -2779,8 +2779,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xdeployer@3.1.17:
-    resolution: {integrity: sha512-fvmgVDVdS1zjNixWHZNvJd79y8LM3am5I6ec9zpOVjvdmgO6IERX1AgiBy3KSEsRDAxBmiCz4VezNGAkznyLbQ==}
+  xdeployer@3.1.18:
+    resolution: {integrity: sha512-rb+7vaBbN5yptysKWoQZg79H7c4gfTcA4iriJpTAwcZCBwNNA8oHul6QOejlB7zwovVTSSTJTJnTGUZA3WrouA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.1.0
@@ -5851,7 +5851,7 @@ snapshots:
 
   ws@8.18.3: {}
 
-  xdeployer@3.1.17(@nomicfoundation/hardhat-ethers@3.1.0(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)))(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)):
+  xdeployer@3.1.18(@nomicfoundation/hardhat-ethers@3.1.0(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)))(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3)):
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.1.0(ethers@6.15.0)(hardhat@2.26.3(ts-node@10.9.2(@types/node@24.7.2)(typescript@5.9.3))(typescript@5.9.3))
       ethers: 6.15.0
