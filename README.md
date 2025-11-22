@@ -14,7 +14,7 @@ The smart contract [`Create`](./contracts/Create.sol) also provides a function `
 ## Test Deployments
 
 - Sepolia: [`0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950`](https://sepolia.etherscan.io/address/0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950)
-- Holešky (Holešovice): [`0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950`](https://holesky.etherscan.io/address/0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950)
+- Hoodi: [`0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950`](https://hoodi.etherscan.io/address/0x910F5D1Ec00F5E7226A14eAAeD8C3b5B03E11950)
 
 ## `CREATE2` Factory
 
