@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.13;
 
 /**
  * @dev Error that occurs when the contract creation failed.
@@ -49,8 +49,7 @@ contract Create {
     function deploy(uint256 amount, bytes memory bytecode) public returns (address newContract) {
         if (address(this).balance < amount) revert InsufficientBalance(address(this));
         if (bytecode.length == 0) revert ZeroBytecodeLength(address(this));
-        /// @solidity memory-safe-assembly
-        assembly {
+        assembly ("memory-safe") {
             /** @dev `CREATE` opcode
              *
              * Stack input
