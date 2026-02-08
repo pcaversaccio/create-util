@@ -27,7 +27,7 @@ error InvalidNonceValue(address emitter);
 
 /**
  * @title CREATE Deployer Smart Contract
- * @author Pascal Marco Caversaccio, pascal.caversaccio@hotmail.ch
+ * @author pcaversaccio
  * @notice Helper smart contract to make easier and safer usage of the `CREATE` EVM opcode.
  * @dev Adjusted from here: https://github.com/safe-fndn/safe-smart-account/blob/main/contracts/libraries/CreateCall.sol.
  */
