@@ -78,8 +78,8 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(prettier@3.8.1)
       solhint:
-        specifier: ^6.2.0
-        version: 6.2.0(typescript@6.0.2)
+        specifier: ^6.2.1
+        version: 6.2.1(typescript@6.0.2)
       solidity-coverage:
         specifier: ^0.8.17
         version: 0.8.17(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.5.0)(typescript@6.0.2))(typescript@6.0.2))
@@ -278,8 +278,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@ledgerhq/client-ids@0.8.0':
-    resolution: {integrity: sha512-COxmSvDAtyRlgitKcCfbq7+dqOnwzbyaasUgBj7AdVtswUwPOLLBbq1y/E/dg5TNjfXTV3zMCOu7WpNq0PdVTg==}
+  '@ledgerhq/client-ids@0.8.1':
+    resolution: {integrity: sha512-NkcFNyp6oAvzFL3uplSDfc8Cfgfm5sxqhCQvcNYINjz85dCEzMxyj3/XukNbB2zHTomz5j4PyDTzBPiZM20VCw==}
 
   '@ledgerhq/cryptoassets@9.13.0':
     resolution: {integrity: sha512-MzGJyc48OGU/FLYGYwEJyfOgbJzlR8XJ9Oo6XpNpNUM1/E5NDqvD72V0D+0uWIJYN3e2NtyqHXShLZDu7P95YA==}
@@ -287,8 +287,8 @@ packages:
   '@ledgerhq/devices@8.13.0':
     resolution: {integrity: sha512-hgGn1kpe/rT0EJ0Qs7rG+1TXA4g6HN2t3dB4DndRTqVqC9aSSbME+ajA0QWLZisxOD3zkwvO4Q0mJ2zARAKyag==}
 
-  '@ledgerhq/domain-service@1.7.2':
-    resolution: {integrity: sha512-u2BkKSQyDqw+txs97xa/t8zZmGb5XpsktPjaBNwJ8xxQkYGwi2Hz/IrveOgR/7lUTY0+iYmajuwJqVncH198KQ==}
+  '@ledgerhq/domain-service@1.7.3':
+    resolution: {integrity: sha512-H4xDzpMFSklAecFEk06o43sQz6GhBCDeeDy+W4nX2jxic/oCQGPnTQtS2+Ds+Tdy/FXRTV8RASBq6eN69yTf2w==}
 
   '@ledgerhq/errors@6.32.0':
     resolution: {integrity: sha512-BjjvhLM6UXYUbhllqAduo9PSneLt9FXZ3TBEUFQ3MMSZOCHt0gAgDySLwul99R8fdYWkXBza4DYQjUNckpN2lg==}
@@ -308,14 +308,14 @@ packages:
   '@ledgerhq/hw-transport@6.34.1':
     resolution: {integrity: sha512-Bg9Qk2vtm0m0cZn9prZV2Hbvh3b42KBh4uomO00derh+eiwsdg5AXBBptAJiREkew1RVtETRdWxrKchUJfeWvA==}
 
-  '@ledgerhq/live-env@2.30.0':
-    resolution: {integrity: sha512-cs+MOC1oWv6b6Iuu0NiIjH78ecX4UAAFHgEHipdcojdsuOCRbPUxGmj/l3vpATkyEwTZEjIAVGFFtJ830KQDAw==}
+  '@ledgerhq/live-env@2.31.0':
+    resolution: {integrity: sha512-Hl5ldGa7lT7bKkNHruFepKhEWvb0hvjvQ1cXBbR7yp9I7EPceDXQt/uySOyaY41caWX0x27TUQIz3PVEv67HJA==}
 
   '@ledgerhq/logs@6.16.0':
     resolution: {integrity: sha512-v/PLfb1dq1En35kkpbfRWp8jLYgbPUXxGhmd4pmvPSIe0nRGkNTomsZASmWQAv6pRonVGqHIBVlte7j1MBbOww==}
 
-  '@ledgerhq/types-live@6.102.0':
-    resolution: {integrity: sha512-/kAnEvW1g87BAtVJMXPQkZMNstjmYY+N620rOKvd+cbcZkVSa5N3MAjQHPdccLrJr/Xp5x+G21KDmp4u2j8Lfg==}
+  '@ledgerhq/types-live@6.103.0':
+    resolution: {integrity: sha512-e/cc0zZs7f/6/g2dTd0RX7TZf7NeM7A7dMbmTOPdojkhXvdiSksZZJeSABBSpwJpiKYcgi/ABRDr3dQMiwNq0A==}
 
   '@noble/ciphers@1.3.0':
     resolution: {integrity: sha512-2I0gnIVPtfnMw9ee9h1dJG7tp81+8Ob3OJb3Mv37rx5L40/b0i7djjCVvGOVqc9AEIQyvyu1i6ypKdFw8R8gQw==}
@@ -1867,8 +1867,8 @@ packages:
   lodash.truncate@4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
 
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
@@ -2471,8 +2471,8 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
 
-  solhint@6.2.0:
-    resolution: {integrity: sha512-rFQw2ICWYl8n9Rzp4gIRzN3IqrUFz6fuwnb2TnaG1YN4trkplTeAcT1YXqRsj9Xy0jNcZ/tGtYRsduoaEHHDng==}
+  solhint@6.2.1:
+    resolution: {integrity: sha512-+VHSa84CRjm2s+KZWYxIDnI+NokcLsZHOSpRtg5nBFmnVfh6RPmPaFd5TN922Cfrm2i85kNoQtLiapALe26b5w==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3114,9 +3114,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@ledgerhq/client-ids@0.8.0(react@19.0.0)':
+  '@ledgerhq/client-ids@0.8.1(react@19.0.0)':
     dependencies:
-      '@ledgerhq/live-env': 2.30.0
+      '@ledgerhq/live-env': 2.31.0
       '@reduxjs/toolkit': 2.11.2(react@19.0.0)
       uuid: 9.0.1
     transitivePeerDependencies:
@@ -3134,11 +3134,11 @@ snapshots:
       rxjs: 7.8.2
       semver: 7.7.3
 
-  '@ledgerhq/domain-service@1.7.2(debug@4.4.3)':
+  '@ledgerhq/domain-service@1.7.3(debug@4.4.3)':
     dependencies:
       '@ledgerhq/errors': 6.32.0
       '@ledgerhq/logs': 6.16.0
-      '@ledgerhq/types-live': 6.102.0(react@19.0.0)
+      '@ledgerhq/types-live': 6.103.0(react@19.0.0)
       axios: 1.13.2(debug@4.4.3)
       eip55: 2.1.1
       react: 19.0.0
@@ -3154,7 +3154,7 @@ snapshots:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/rlp': 5.8.0
       '@ledgerhq/cryptoassets': 9.13.0
-      '@ledgerhq/domain-service': 1.7.2(debug@4.4.3)
+      '@ledgerhq/domain-service': 1.7.3(debug@4.4.3)
       '@ledgerhq/errors': 6.32.0
       '@ledgerhq/hw-transport': 6.34.1
       '@ledgerhq/hw-transport-mocker': 6.33.1
@@ -3187,7 +3187,7 @@ snapshots:
       '@ledgerhq/hw-transport': 6.34.1
       '@ledgerhq/hw-transport-node-hid-noevents': 6.34.0
       '@ledgerhq/logs': 6.16.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       node-hid: 2.1.2
       usb: 2.9.0
 
@@ -3198,16 +3198,16 @@ snapshots:
       '@ledgerhq/logs': 6.16.0
       events: 3.3.0
 
-  '@ledgerhq/live-env@2.30.0':
+  '@ledgerhq/live-env@2.31.0':
     dependencies:
       rxjs: 7.8.2
       utility-types: 3.11.0
 
   '@ledgerhq/logs@6.16.0': {}
 
-  '@ledgerhq/types-live@6.102.0(react@19.0.0)':
+  '@ledgerhq/types-live@6.103.0(react@19.0.0)':
     dependencies:
-      '@ledgerhq/client-ids': 0.8.0(react@19.0.0)
+      '@ledgerhq/client-ids': 0.8.1(react@19.0.0)
       bignumber.js: 9.3.1
       rxjs: 7.8.2
     transitivePeerDependencies:
@@ -3513,7 +3513,7 @@ snapshots:
   '@typechain/ethers-v6@0.5.1(ethers@6.16.0)(typechain@8.3.2(typescript@6.0.2))(typescript@6.0.2)':
     dependencies:
       ethers: 6.16.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       ts-essentials: 7.0.3(typescript@6.0.2)
       typechain: 8.3.2(typescript@6.0.2)
       typescript: 6.0.2
@@ -4656,7 +4656,7 @@ snapshots:
       glob: 10.5.0
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.5.0)(typescript@6.0.2))(typescript@6.0.2)
       jsonschema: 1.5.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       markdown-table: 2.0.0
       sha1: 1.1.1
       viem: 2.47.6(typescript@6.0.2)(zod@3.24.4)
@@ -4691,7 +4691,7 @@ snapshots:
       io-ts: 1.10.4
       json-stream-stringify: 3.1.6
       keccak: 3.0.4
-      lodash: 4.17.21
+      lodash: 4.18.1
       micro-eth-signer: 0.14.0
       mnemonist: 0.38.5
       mocha: 10.8.2
@@ -4953,7 +4953,7 @@ snapshots:
 
   lodash.truncate@4.4.2: {}
 
-  lodash@4.17.21: {}
+  lodash@4.18.1: {}
 
   log-symbols@4.1.0:
     dependencies:
@@ -5104,7 +5104,7 @@ snapshots:
 
   node-emoji@1.11.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.18.1
 
   node-gyp-build@4.8.4: {}
 
@@ -5556,7 +5556,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  solhint@6.2.0(typescript@6.0.2):
+  solhint@6.2.1(typescript@6.0.2):
     dependencies:
       '@solidity-parser/parser': 0.20.2
       ajv: 8.18.0
@@ -5571,7 +5571,7 @@ snapshots:
       ignore: 5.3.2
       js-yaml: 4.1.1
       latest-version: 7.0.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       pluralize: 8.0.0
       semver: 7.7.4
       table: 6.9.0
@@ -5594,7 +5594,7 @@ snapshots:
       globby: 10.0.2
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.5.0)(typescript@6.0.2))(typescript@6.0.2)
       jsonschema: 1.5.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mocha: 10.8.2
       node-emoji: 1.11.0
       pify: 4.0.1
@@ -5801,7 +5801,7 @@ snapshots:
       fs-extra: 7.0.1
       glob: 7.1.7
       js-sha3: 0.8.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mkdirp: 1.0.4
       prettier: 2.8.8
       ts-command-line-args: 2.5.1
