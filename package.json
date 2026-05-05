@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio",
   "license": "MIT",
-  "packageManager": "pnpm@10.33.2",
+  "packageManager": "pnpm@11.0.5",
   "scripts": {
     "help": "hardhat help",
     "accounts": "hardhat accounts",
@@ -242,15 +242,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.1",
+    "typescript-eslint": "^8.59.2",
     "xdeployer": "^3.1.24"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "keccak",
-      "node-hid",
-      "secp256k1",
-      "usb"
-    ]
   }
 }
