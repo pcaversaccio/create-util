@@ -75,8 +75,8 @@ importers:
         specifier: ^3.9.6
         version: 3.9.6
       prettier-plugin-solidity:
-        specifier: ^2.3.1
-        version: 2.3.1(prettier@3.9.6)
+        specifier: ^2.4.0
+        version: 2.4.0(prettier@3.9.6)
       solhint:
         specifier: ^6.2.3
         version: 6.2.3(typescript@6.0.3)
@@ -112,8 +112,8 @@ packages:
     resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
 
-  '@bytecodealliance/preview2-shim@0.17.9':
-    resolution: {integrity: sha512-i0R3eQBe6PA/o/1EFE3Owe4In2rcccb6QxnjpntM/lPe3/duJ0bRQTVZM2Ufpo99X4eofGeltQUkape1C91FFA==}
+  '@bytecodealliance/preview2-shim@0.19.0':
+    resolution: {integrity: sha512-OSUlcM62fXLuzYP0DjBn/SwjKMZ/y/2PMXZ8v5cRiiFcroauntlPRl/oCnx0xYjYiqdYvE0PY50VCNutll0xOw==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -438,8 +438,8 @@ packages:
     peerDependencies:
       hardhat: ^2.26.0
 
-  '@nomicfoundation/slang@1.3.4':
-    resolution: {integrity: sha512-ghzrPSYH1sZO65id6+Bq2Ood87HT54QP3RGC8EkmpcrJ6tT9Ky0RtaJfrzV5G4jpDsnNua6+YEDpzOMori04hQ==}
+  '@nomicfoundation/slang@1.3.7':
+    resolution: {integrity: sha512-ryH2soSaqnv+lbHNe2dGA/05gZOB1c2OvAoNbqPfT341P3WC/1xwEGJeQWclIIFjl70FKLU8+LdIOdxMvW1evg==}
 
   '@nomicfoundation/solidity-analyzer-darwin-arm64@0.1.2':
     resolution: {integrity: sha512-JaqcWPDZENCvm++lFFGjrDd8mxtf+CtLd2MiXvMNTBD33dContTZ9TWETwNFwg7JTJT5Q9HEecH7FA+HTSsIUw==}
@@ -1116,6 +1116,7 @@ packages:
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    deprecated: Active development of CryptoJS has been discontinued. This library is no longer maintained.
 
   death@1.1.0:
     resolution: {integrity: sha512-vsV6S4KVHvTGxbEcij7hkWRv0It+sGGWVOM67dQde/o5Xjnr+KmLjxWJii2uEObIrt1CcM9w0Yaovx+iOlIL+w==}
@@ -2214,8 +2215,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-solidity@2.3.1:
-    resolution: {integrity: sha512-71sZM5oqgq6pnTlf+RH23U6Ej710APfCiMWO2Z/pHNjrXyvn9Nr0vTS1AUVaSf4GRW0V6hj6Djt0MyWudJUJbQ==}
+  prettier-plugin-solidity@2.4.0:
+    resolution: {integrity: sha512-Z/zXRhdWzz3zq7gOmQ7k0mDOFZwhbZxT+u6C+9c4Mzq0iXsc4ONdq78rgIGD9KSZ5NAJ7KrRsalPcN4A0XOfnw==}
     engines: {node: '>=20'}
     peerDependencies:
       prettier: '>=3.0.0'
@@ -2884,7 +2885,7 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.29.7': {}
 
-  '@bytecodealliance/preview2-shim@0.17.9': {}
+  '@bytecodealliance/preview2-shim@0.19.0': {}
 
   '@colors/colors@1.5.0':
     optional: true
@@ -3330,9 +3331,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/slang@1.3.4':
+  '@nomicfoundation/slang@1.3.7':
     dependencies:
-      '@bytecodealliance/preview2-shim': 0.17.9
+      '@bytecodealliance/preview2-shim': 0.19.0
 
   '@nomicfoundation/solidity-analyzer-darwin-arm64@0.1.2':
     optional: true
@@ -5296,9 +5297,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-solidity@2.3.1(prettier@3.9.6):
+  prettier-plugin-solidity@2.4.0(prettier@3.9.6):
     dependencies:
-      '@nomicfoundation/slang': 1.3.4
+      '@nomicfoundation/slang': 1.3.7
       '@solidity-parser/parser': 0.20.2
       prettier: 3.9.6
       semver: 7.8.5
