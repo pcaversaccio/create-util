@@ -236,8 +236,8 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1(prettier@3.9.9)
       solhint:
-        specifier: ^6.2.4
-        version: 6.2.4(typescript@6.0.3)
+        specifier: ^6.2.5
+        version: 6.2.5(typescript@6.0.3)
       solidity-coverage:
         specifier: ^0.8.17
         version: 0.8.17(hardhat@2.29.1(supports-color@8.1.1)(ts-node@10.9.2(@types/node@26.6.3)(typescript@6.0.3))(typescript@6.0.3))
@@ -2635,8 +2635,8 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
 
-  solhint@6.2.4:
-    resolution: {integrity: sha512-2hCfsDGcCit/4Ue0Bf3HxalxEaHM/rfoSf3rMVAQQ5NWWcVPS0F+RSqQzMEPc8Ta7r5L3DeaKyzmbjD5B2fUdg==}
+  solhint@6.2.5:
+    resolution: {integrity: sha512-WCkEQIJHMaCLv7d9SuTsGjcsprv2DLP2dxg95oUtAe7qYh4Ho3NfECCNSSTZ6OPnjv1HMV8z2Bcg7nH1UBAZiA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -5738,7 +5738,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  solhint@6.2.4(typescript@6.0.3):
+  solhint@6.2.5(typescript@6.0.3):
     dependencies:
       '@solidity-parser/parser': 0.20.2
       ajv: 8.20.0
